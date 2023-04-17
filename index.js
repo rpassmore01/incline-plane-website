@@ -151,7 +151,7 @@ function resetWorld() {
     //  clear world
     Matter.World.clear(engine.world);
     // redraw shapes
-    blockStartLocation = { x: 50, y: 100 + (50 * Math.tan(degreesToRadians(angle))) - (10 / Math.cos(degreesToRadians(angle))) };
+    blockStartLocation = { x: 50, y: 100 + (50 * Math.tan(degreesToRadians(angle))) - (10 / Math.cos(degreesToRadians(angle))) -1 };
     Matter.Body.setPosition(block, blockStartLocation)
     Matter.Body.setAngle(block, degreesToRadians(angle));
     Matter.Body.setAngularSpeed(block, 0);

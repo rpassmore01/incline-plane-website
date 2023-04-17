@@ -21,3 +21,19 @@
     display: flex;
     justify-content: center;
 }
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.imageContainer img {
+    height: 80%;
+}
+
+header {
+    text-align: center;
+}
