@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="matterJS" class="canvas"></div>
+    <div class="formContainer">
+        <form>
+            <div class="parameterBox">
+                <label for="angle">Angle:</label>
+                <input type="range" id="angle" name="angle" min=1 max=89 />
+                <p id="angleNum">0</p>
+            </div>
+            <div class="parameterBox">
+                <label for="friction">Coefficient of friction:</label>
+                <input type="range" id="friction" name="friction" min=0 max=99 />
+                <p id="frictionNum">0</p>
+            </div>
+            <div class="parameterBox">
+                <label for="gravity">Gravity:</label>
+                <input type="range" id="gravity" name="gravity" min=1 max=99 />
+                <p id="gravityNum">0</p>
+            </div>
+            <input type="button" id="reset" name="reset" value="Reset" />
+        </form>
+        <div>
+            <p>Calculated: </p>
+            <p id="acceleration">0</p>
+            <p id="frictionEx"></p>
+            <p id="netAcc"></p>
+            <p id="calculated"></p>
+            <p>Actual:</p>
+            <p id="time">Time: 0</p>
+            <p id="speed">Speed: 0</p>
+        </div>
+    </div>
+    <script src="matter.js"></script>
+    <script src="helpers.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
